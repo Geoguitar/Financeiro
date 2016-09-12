@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>OutputFormat</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<h:outputFormat value="oi {0}! Existem {1} tarefas pendentes.">
+			<f:param value="#{tarefaBean.nomeUsuario}"></f:param>
+			<f:param value="#{tarefaBean.qtdeTarefasPendentes}"></f:param>
+		</h:outputFormat>
+	</h:form>
+</h:body>
+
+</html>
